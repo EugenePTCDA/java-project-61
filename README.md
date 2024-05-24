@@ -3,14 +3,14 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/d2330e75398fe06abfd3/maintainability)](https://codeclimate.com/github/EugenePTCDA/java-project-61/maintainability)
 
-![Greet.png](app%2Fassets%2FGreet.png)
+![Greet.png](app/assets/Greet.png)
 
-![Even.png](app%2Fassets%2FEven.png)
+![Even.png](app/assets/Even.png)
 
-![Calc.png](app%2Fassets%2FCalc.png)
+![Calc.png](app/assets/Calc.png)
 
-![GCD.png](app%2Fassets%2FGCD.png)
+![GCD.png](app/assets/GCD.png)
 
-![Progression.png](app%2Fassets%2FProgression.png)
+![Progression.png](app/assets/Progression.png)
 
-![Prime.png](app%2Fassets%2FPrime.png)
+![Prime.png](app/assets/Prime.png)
