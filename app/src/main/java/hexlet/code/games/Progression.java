@@ -6,6 +6,8 @@ import java.util.Arrays;
 
 public class Progression {
     private static final String START_PHRASE = "What number is missing in the progression?";
+    private static final int PROGRESSION_MIN_NUMBER = 1;
+    private static final int PROGRESSION_MAX_NUMBER = 1000;
 
     public static void play() {
         int roundCount = Engine.getRoundsCount();
@@ -27,8 +29,8 @@ public class Progression {
 
     public static int[] makeArray() {
         int[] arrayNumbers = new int[10];
-        int step = Engine.randomNumber(1, 100);
-        arrayNumbers[0] = Engine.randomNumber(0, 100);
+        int step = Engine.randomNumber(PROGRESSION_MIN_NUMBER, PROGRESSION_MAX_NUMBER);
+        arrayNumbers[0] = Engine.randomNumber(0, PROGRESSION_MAX_NUMBER);
         for (int i = 1; i < arrayNumbers.length; i++) {
             arrayNumbers[i] = arrayNumbers[i - 1] + step;
         }

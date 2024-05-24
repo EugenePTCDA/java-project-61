@@ -6,6 +6,7 @@ public class Calc {
     private static final String START_PHRASE = "What is the result of the expression?";
     private static final int CALC_MIN_NUMBER = 1;
     private static final int CALC_MAX_NUMBER = 100;
+
     public static void play() {
         int roundCount = Engine.getRoundsCount();
         String[][] rounds = new String[roundCount][2];

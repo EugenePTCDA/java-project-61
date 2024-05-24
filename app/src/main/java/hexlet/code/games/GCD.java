@@ -6,6 +6,7 @@ public class GCD {
     private static final String START_PHRASE = "Find the greatest common divisor of given numbers.";
     private static final int GCD_MIN_NUMBER = 10;
     private static final int GCD_MAX_NUMBER = 100;
+
     public static void play() {
         int roundCount = Engine.getRoundsCount();
         String[][] rounds = new String[roundCount][2];
