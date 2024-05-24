@@ -23,7 +23,7 @@ public class Calc {
 
     public static char mathAction() {
         char[] actions = {'+', '-', '*'};
-        int chooseAction = Engine.randomNumber(1, 3);
+        int chooseAction = Engine.randomNumber(0, 2);
         return actions[chooseAction];
     }
 
