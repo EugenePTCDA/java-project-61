@@ -25,16 +25,16 @@ public class App {
         System.out.println("0 - Exit");
         System.out.print("Your choice: ");
 
-        int choice = scanner.nextInt();
+        String choice = scanner.nextLine();
 
         switch (choice) {
-            case 0 -> System.out.println("Goodbye!");
-            case 1 -> Greet.sayHello();
-            case 2 -> Even.play();
-            case 3 -> Calc.play();
-            case 4 -> GCD.play();
-            case 5 -> Progression.play();
-            case 6 -> Prime.play();
+            case "0" -> System.out.println("Goodbye!");
+            case "1" -> Greet.sayHello();
+            case "2" -> Even.play();
+            case "3" -> Calc.play();
+            case "4" -> GCD.play();
+            case "5" -> Progression.play();
+            case "6" -> Prime.play();
             default -> System.out.println("No such game");
         }
 
