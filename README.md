@@ -3,6 +3,8 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/d2330e75398fe06abfd3/maintainability)](https://codeclimate.com/github/EugenePTCDA/java-project-61/maintainability)
 
+![Greet.png](app%2Fassets%2FGreet.png)
+
 ![Even.png](app%2Fassets%2FEven.png)
 
 ![Calc.png](app%2Fassets%2FCalc.png)
