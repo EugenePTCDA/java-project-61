@@ -13,8 +13,6 @@ public class Engine {
     }
 
     public static int randomNumber(int min, int max) {
-        min = min;
-        max = max;
         return (int) (Math.random() * (max - min + 1)) + min;
     }
 
@@ -37,6 +35,10 @@ public class Engine {
                 System.out.println("Correct answer was '" + correctAnswer + "'.");
                 System.out.println("Let's try again, " + name + "!");
                 return;
+            }
+
+            if (i == 2) {
+                System.out.println("Congratulations, " + name + "!");
             }
 
             System.out.println("Correct!");
