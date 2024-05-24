@@ -4,14 +4,15 @@ import hexlet.code.Engine;
 
 public class Calc {
     private static final String START_PHRASE = "What is the result of the expression?";
-
+    private static final int CALC_MIN_NUMBER = 1;
+    private static final int CALC_MAX_NUMBER = 100;
     public static void play() {
         int roundCount = Engine.getRoundsCount();
         String[][] rounds = new String[roundCount][2];
 
         for (int i = 0; i < roundCount; i++) {
-            int num1 = Engine.randomNumber(1, 100);
-            int num2 = Engine.randomNumber(1, 100);
+            int num1 = Engine.randomNumber(CALC_MIN_NUMBER, CALC_MAX_NUMBER);
+            int num2 = Engine.randomNumber(CALC_MIN_NUMBER, CALC_MAX_NUMBER);
             char sign = mathAction();
 
             rounds[i][0] = num1 + " " + sign + " " + num2;
