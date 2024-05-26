@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Engine {
 
-    private static final int ROUND_COUNT = 3;
+    public static final int ROUND_COUNT = 3;
 
     public static int getRoundsCount() {
         return ROUND_COUNT;
