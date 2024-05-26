@@ -12,8 +12,8 @@ public class Calc {
         String[][] rounds = new String[Engine.ROUND_COUNT][2];
 
         for (int i = 0; i < Engine.ROUND_COUNT; i++) {
-            int num1 = Engine.randomNumber(CALC_MIN_NUMBER, CALC_MAX_NUMBER);
-            int num2 = Engine.randomNumber(CALC_MIN_NUMBER, CALC_MAX_NUMBER);
+            int num1 = Engine.createRandomNumber(CALC_MIN_NUMBER, CALC_MAX_NUMBER);
+            int num2 = Engine.createRandomNumber(CALC_MIN_NUMBER, CALC_MAX_NUMBER);
             char sign = mathAction();
 
             rounds[i][0] = num1 + " " + sign + " " + num2;
@@ -25,7 +25,7 @@ public class Calc {
 
     public static char mathAction() {
         char[] actions = {'+', '-', '*'};
-        int chooseAction = Engine.randomNumber(0, 2);
+        int chooseAction = Engine.createRandomNumber(0, 2);
         return actions[chooseAction];
     }
 

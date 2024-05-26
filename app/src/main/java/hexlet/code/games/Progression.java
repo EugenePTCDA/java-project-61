@@ -30,8 +30,8 @@ public class Progression {
 
     public static int[] makeArray() {
         int[] arrayNumbers = new int[ARRAY_LENGTH];
-        int step = Engine.randomNumber(PROGRESSION_MIN_NUMBER, PROGRESSION_MAX_NUMBER);
-        arrayNumbers[0] = Engine.randomNumber(0, PROGRESSION_MAX_NUMBER);
+        int step = Engine.createRandomNumber(PROGRESSION_MIN_NUMBER, PROGRESSION_MAX_NUMBER);
+        arrayNumbers[0] = Engine.createRandomNumber(0, PROGRESSION_MAX_NUMBER);
         for (int i = 1; i < arrayNumbers.length; i++) {
             arrayNumbers[i] = arrayNumbers[i - 1] + step;
         }
@@ -40,7 +40,7 @@ public class Progression {
 
     public static String[] questionArray(int[] array) {
         String[] arrayMod = new String[array.length];
-        int randomIndex = Engine.randomNumber(0, array.length - 1);
+        int randomIndex = Engine.createRandomNumber(0, array.length - 1);
         for (int i = 0; i < array.length; i++) {
             if (i == randomIndex) {
                 arrayMod[i] = "..";

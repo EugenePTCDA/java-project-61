@@ -12,7 +12,7 @@ public class Even {
         String[][] rounds = new String[Engine.ROUND_COUNT][2];
 
         for (int i = 0; i < Engine.ROUND_COUNT; i++) {
-            int number = Engine.randomNumber(EVEN_MIN_NUMBER, EVEN_MAX_NUMBER);
+            int number = Engine.createRandomNumber(EVEN_MIN_NUMBER, EVEN_MAX_NUMBER);
 
             rounds[i][0] = Integer.toString(number);
             rounds[i][1] = checkEven(number) ? "yes" : "no";

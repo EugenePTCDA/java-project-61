@@ -12,7 +12,7 @@ public class Prime {
         String[][] rounds = new String[Engine.ROUND_COUNT][2];
 
         for (int i = 0; i < Engine.ROUND_COUNT; i++) {
-            int primeNumber = Engine.randomNumber(PRIME_MIN_NUMBER, PRIME_MAX_NUMBER);
+            int primeNumber = Engine.createRandomNumber(PRIME_MIN_NUMBER, PRIME_MAX_NUMBER);
 
             rounds[i][0] = Integer.toString(primeNumber);
             rounds[i][1] = isPrime(primeNumber) ? "yes" : "no";
