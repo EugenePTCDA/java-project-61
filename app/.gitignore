@@ -44,3 +44,5 @@ bin/
 *.class
 
 *.xml
+
+.idea
