@@ -13,6 +13,8 @@ public class Greet {
 
         System.out.println("Hello, " + name + "!");
 
+        scanner.close();
+
         return name;
     }
 }
