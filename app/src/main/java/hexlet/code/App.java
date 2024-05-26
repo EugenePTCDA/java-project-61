@@ -37,7 +37,5 @@ public class App {
             case "6" -> Prime.play();
             default -> System.out.println("No such game");
         }
-
-
     }
 }
