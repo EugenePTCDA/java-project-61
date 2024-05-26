@@ -33,7 +33,7 @@ public class Engine {
                 return;
             }
 
-            if (i == 2) {
+            if (i == ROUND_COUNT - 1) {
                 System.out.println("Congratulations, " + name + "!");
             }
 
