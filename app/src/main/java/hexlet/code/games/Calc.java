@@ -23,13 +23,13 @@ public class Calc {
         Engine.runGame(START_PHRASE, rounds);
     }
 
-    public static char mathAction() {
+    private static char mathAction() {
         char[] actions = {'+', '-', '*'};
         int chooseAction = Engine.createRandomNumber(0, 2);
         return actions[chooseAction];
     }
 
-    public static int calcResult(int num1, int num2, char sign) {
+    private static int calcResult(int num1, int num2, char sign) {
         return switch (sign) {
             case '+' -> num1 + num2;
             case '-' -> num1 - num2;

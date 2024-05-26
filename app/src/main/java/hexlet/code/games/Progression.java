@@ -28,7 +28,7 @@ public class Progression {
         Engine.runGame(START_PHRASE, rounds);
     }
 
-    public static int[] makeArray() {
+    private static int[] makeArray() {
         int[] arrayNumbers = new int[ARRAY_LENGTH];
         int step = Engine.createRandomNumber(PROGRESSION_MIN_NUMBER, PROGRESSION_MAX_NUMBER);
         arrayNumbers[0] = Engine.createRandomNumber(0, PROGRESSION_MAX_NUMBER);
@@ -38,7 +38,7 @@ public class Progression {
         return arrayNumbers;
     }
 
-    public static String[] questionArray(int[] array) {
+    private static String[] questionArray(int[] array) {
         String[] arrayMod = new String[array.length];
         int randomIndex = Engine.createRandomNumber(0, array.length - 1);
         for (int i = 0; i < array.length; i++) {
@@ -51,7 +51,7 @@ public class Progression {
         return arrayMod;
     }
 
-    public static int findReplacedNumber(int[] array, String[] modifiedArray) {
+    private static int findReplacedNumber(int[] array, String[] modifiedArray) {
         for (int i = 0; i < array.length; i++) {
             if ("..".equals(modifiedArray[i])) {
                 return array[i];

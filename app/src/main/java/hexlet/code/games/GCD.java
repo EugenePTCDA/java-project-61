@@ -22,7 +22,7 @@ public class GCD {
         Engine.runGame(START_PHRASE, rounds);
     }
 
-    public static int findGCD(int a, int b) {
+    private static int findGCD(int a, int b) {
         while (b != 0) {
             int temp = b;
             b = a % b;

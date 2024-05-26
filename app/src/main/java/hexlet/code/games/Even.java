@@ -21,7 +21,7 @@ public class Even {
         Engine.runGame(START_PHRASE, rounds);
     }
 
-    public static boolean checkEven(int number) {
+    private static boolean checkEven(int number) {
         return number % 2 == 0;
     }
 }
