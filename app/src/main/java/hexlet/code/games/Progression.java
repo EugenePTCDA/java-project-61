@@ -11,10 +11,10 @@ public class Progression {
     private static final int ARRAY_LENGTH = 10;
 
     public static void play() {
-        int roundCount = Engine.getRoundsCount();
-        String[][] rounds = new String[roundCount][2];
 
-        for (int i = 0; i < roundCount; i++) {
+        String[][] rounds = new String[Engine.ROUND_COUNT][2];
+
+        for (int i = 0; i < Engine.ROUND_COUNT; i++) {
             int[] arrayNumbers = makeArray();
             String[] questionArray = questionArray(arrayNumbers);
             int replacedNumber = findReplacedNumber(arrayNumbers, questionArray);

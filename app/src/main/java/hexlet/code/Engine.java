@@ -8,10 +8,6 @@ public class Engine {
 
     public static final int ROUND_COUNT = 3;
 
-    public static int getRoundsCount() {
-        return ROUND_COUNT;
-    }
-
     public static int randomNumber(int min, int max) {
         return (int) (Math.random() * (max - min + 1)) + min;
     }

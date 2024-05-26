@@ -8,10 +8,10 @@ public class GCD {
     private static final int GCD_MAX_NUMBER = 100;
 
     public static void play() {
-        int roundCount = Engine.getRoundsCount();
-        String[][] rounds = new String[roundCount][2];
 
-        for (int i = 0; i < roundCount; i++) {
+        String[][] rounds = new String[Engine.ROUND_COUNT][2];
+
+        for (int i = 0; i < Engine.ROUND_COUNT; i++) {
             int num1 = Engine.randomNumber(GCD_MIN_NUMBER, GCD_MAX_NUMBER);
             int num2 = Engine.randomNumber(GCD_MIN_NUMBER, GCD_MAX_NUMBER);
 
