@@ -30,12 +30,11 @@ public class Calc {
     }
 
     public static int calcResult(int num1, int num2, char sign) {
-        int result = switch (sign) {
+        return switch (sign) {
             case '+' -> num1 + num2;
             case '-' -> num1 - num2;
             case '*' -> num1 * num2;
             default -> 0;
         };
-        return result;
     }
 }
