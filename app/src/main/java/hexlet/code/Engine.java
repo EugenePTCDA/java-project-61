@@ -39,5 +39,6 @@ public class Engine {
 
             System.out.println("Correct!");
         }
+        scanner.close();
     }
 }
