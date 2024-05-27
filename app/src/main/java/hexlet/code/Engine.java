@@ -14,7 +14,7 @@ public class Engine {
 
     public static void runGame(String gameDiscription, String[][] gameBody) {
         Scanner scanner = new Scanner(System.in);
-        String name = Greet.sayHello();
+        String name = Greet.sayHello(scanner);
 
         System.out.println(gameDiscription);
 

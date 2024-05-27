@@ -3,8 +3,7 @@ package hexlet.code.games;
 import java.util.Scanner;
 
 public class Greet {
-    public static String sayHello() {
-        Scanner scanner = new Scanner(System.in);
+    public static String sayHello(Scanner scanner) {
 
         System.out.println("Welcome to the Brain Games!");
         System.out.print("May I have your name? ");

@@ -27,7 +27,7 @@ public class App {
 
             switch (choice) {
                 case "0" -> System.out.println("Goodbye!");
-                case "1" -> Greet.sayHello();
+                case "1" -> Greet.sayHello(scanner);
                 case "2" -> Even.play();
                 case "3" -> Calc.play();
                 case "4" -> GCD.play();
